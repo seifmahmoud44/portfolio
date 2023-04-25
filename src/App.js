@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 function App() {
+  gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div className="things">
+          <div className="ring"></div>
+          <div className="text">
+            <span className="one">O</span>
+            <span className="one">M</span>
+            <span className="last">G</span>
+          </div>
+        </div>
+
+        <Navbar />
+        <Outlet />
+      </div>
+    </>
   );
 }
 
