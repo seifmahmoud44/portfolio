@@ -4,6 +4,8 @@ import { ImWhatsapp } from "react-icons/im";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
+import cv from "./cv.pdf";
+import { FiDownloadCloud } from "react-icons/fi";
 
 const Contact = () => {
   const form = useRef();
@@ -38,6 +40,10 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-links">
+        <a href={cv} download className="item" rel="noreferrer">
+          <FiDownloadCloud />
+          <h3>CV</h3>
+        </a>
         <a href="tel:+201024404781" className="item" rel="noreferrer">
           <FiPhoneCall />
           <h3>Call Me</h3>
