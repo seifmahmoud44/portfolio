@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 import one from "../pages/photos/one.png";
 import tow from "../pages/photos/tow.png";
@@ -8,6 +8,7 @@ import weather from "../pages/photos/weather.png";
 import crudReact from "../pages/photos/crud-react.png";
 import ecommerce from "../pages/photos/ecommerce.png";
 import storeSystem from "../pages/photos/store-system.png";
+import welly from "../pages/photos/screencapture-welly-ecommerce-vercel-app-2023-06-13-22_26_59.png";
 import { BiCodeAlt } from "react-icons/bi";
 import { BiShowAlt } from "react-icons/bi";
 
@@ -19,6 +20,30 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="pro-grid">
+        <div className="item">
+          <img src={welly} alt="" className="pic" />
+
+          <div className="links">
+            <h1 className="title">Welly ecommerce</h1>
+            <div className="content">
+              <a
+                href="https://github.com/seifmahmoud44/welly-ecommerce"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BiCodeAlt />
+              </a>
+
+              <a
+                href="https://welly-ecommerce.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BiShowAlt />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="item">
           <img src={one} alt="" className="pic" />
 

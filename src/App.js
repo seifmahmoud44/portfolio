@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
-function App() {
-  gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin);
 
+function App() {
   return (
     <>
       <div className="App">

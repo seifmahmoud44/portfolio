@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import sdd from "../pages/photo.jpg";
-import SplitType from "split-type";
+
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 
 const Home = () => {
