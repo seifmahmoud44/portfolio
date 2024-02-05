@@ -58,7 +58,7 @@ const Contact = () => {
           <h3>WhatsAPP</h3>
         </a>
         <a
-          href="https://www.linkedin.com/in/seifeldeen-mahmoud/"
+          href="https://www.linkedin.com/in/seif-mahmoud97"
           target="_blank"
           className="item"
           rel="noreferrer"

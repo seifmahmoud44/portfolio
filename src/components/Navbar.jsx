@@ -19,7 +19,7 @@ const Navbar = () => {
       <ul className="social">
         <li>
           <a
-            href="https://www.linkedin.com/in/seifmahmoud97/"
+            href="https://www.linkedin.com/in/seif-mahmoud97"
             target="_blank"
             rel="noreferrer"
           >
